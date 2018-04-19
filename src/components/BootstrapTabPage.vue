@@ -4,14 +4,15 @@
       <b-tabs :card='false' :lazy='true'>
         <!-- Render Tabs -->
         <b-tab :title="`Tab ${i}`" v-for="i in tabs" :key="i"> <!--- HOW RENDER DIFFERENT COMPONENTS IN TABS -->
-          Tab Contents {{i}}                                          <!--- HOW TO GET CLOSE-TAB IN TAB -->
+          Tab Contents {{i}}
+
           <b-btn size="sm" variant="danger" class="float-right" @click="()=>closeTab(i)">
             Close tab
           </b-btn>
         </b-tab>
 
         <!-- New Tab Button (Using tabs slot) -->
-        <b-nav-item slot="tabs" @click.prevent="newTab" href="#">
+        <b-nav-item slot="tabs" @click.prevent="newTab" href="#">  <!--- HOW TO GET CLOSE-TAB IN TAB -->
           +
         </b-nav-item>
 
@@ -28,7 +29,7 @@
 
 <script>
 export default {
-  name: 'TabPage',
+  name: 'BootstrapTabPage',
   data () {
     return {
       tabs: [],
