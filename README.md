@@ -1,6 +1,6 @@
 # vue-component-playground
 
-> A Vue.js project to play with different components for building a tabbing system
+> A Vue.js homebase to play with different components for various for various projects
 
 
 ## Build Setup
